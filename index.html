@@ -1,12 +1,43 @@
 <!DOCTYPE html>
-<html>
+<!-- 
+Cameron Patton
+cptgk
+12/1/2021
+-->
+<html lang="en">
     <head>
-    
-    
+        <title>About Cameron Patton</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="cptgkCSS.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
     </head>
-    
     <body>
-        <h1>Hosted with GitHub</h1>
-        <p>Howdy World!</p>    
+        <div id="navbar">
+            <ul>
+                <li><a class="nav myName" href="index.html">About Cameron Patton</a></li>
+                <li><a class="nav mySkills" href="cptgkSkills.html">Skills</a></li>
+                <li><a class="nav classesTaken" href="cptgkClasses.html">Classes</a></li>
+                <li><a class="nav projects" href="cptgkShortStory.html">Short Story</a></li>
+                <li><a class="nav projects" href="cptgkCodeBlock.html">C++ Code Block</a></li>
+            </ul>
+        </div>
+        <section id="content">
+            <div id="profileGroup">
+                <img src="Images/pictureOfMe.jpg" alt="pictureOfMe" id="myPhoto">
+                <h3 class="homepageName">Cameron Patton</h3>
+                <p class="aboutMe">Aspiring Video Game Developer from the University of Missouri</p>
+                <div id="links">
+                    <button onclick="window.open('https://github.com/CPatton2000', '_blank')" class="linkButton"><i class="fa fa-github-square"></i></button>
+                    <button onclick="window.open('CameronResume.pdf', '_blank')" type="button" class="linkButton">Resume</button>
+                    <button onclick="window.open('https://www.linkedin.com/in/cameron-patton-4218491b5/', '_blank')" class="linkButton"><i class="fa fa-linkedin"></i></button>
+                </div>
+            </div>
+        </section>
+    <script>
+        document.getElementsByClassName("nav myName")[0].id = "active";
+    </script>
     </body>
+    
 </html>
