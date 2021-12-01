@@ -35,204 +35,45 @@
     background-color: #00c5ff;
 }
 
-#mainContainer {
-    display: flex;
-    flex-wrap: wrap-reverse;
-    flex-direction: row;
-    width: 90%;
-    position: relative;
-    margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
+/* Code Block Styling */
 
-div.cardContainer {
-    border-width: 4px;
-    border-style: dotted;
-    border-color: darkgreen;
-    border-radius: 20px;
-    width: 400px;
-    height: 250px;
-    background-color: limegreen;
-    position: relative;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 5px 5px green;
-}
-
-img.cardImage {
-    float: left;
-    width: 40%;
-    height: 100%;
-    border-right: 10px dotted green;
-    object-fit: cover;
-    border-radius: 15px;
-}
-
-.contentContainer {
-    width: 57.5%;
-    display: inline-block;
-    text-align: center;
-}
-
-span.cardTitle {
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-size: 22px;
-    font-family: "Source Sans Pro", sans-serif;
-}
-
-p.cardDesc {
-    font-size: 20px;
-    font-family: "Source Sans Pro", sans-serif;
-}
-a.cardLink {
-    font-size: 22px;
-    color: darkgreen;
-    font-family: "Source Sans Pro", sans-serif;
-    
+pre code {
+  background-color: #8b9eb2;
+  border: 1px solid #999;
+  display: block;
+  padding: 20px;
 }
 
 
-/* Classes Taken Styling */
+/* Short Story Styling */
 
-table#classesTakenTable {
-    font-family: sans-serif, serif; 
-    width: 95%;
-    margin: auto;
-    border-collapse: collapse;
-    background-color: #007c00;
+#storyDiv{
+    background-color: #8b9eb2;
 }
 
-#classesTakenTable th, #classesTakenTable td {
-    border-top: 2px solid #969696;
-    padding: 5px;
-}
-
-#classesTakenTable tr.odd {
-    background-color: #00a300;
-}
-#classesTakenTable td.CSdepartment {
-    background-color: limegreen;
-}
-
-#classesTakenTable td.ITdepartment {
-    background-color: #2aa52a;
-}
-
-div#myCardWrapper {
-    border: 2px solid black;
-    box-shadow: 10px 10px #008100;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
-}
-
-div#cardCol1, div#cardCol2, div#cardCol3 {
-    width: 30%;
-    display: inline-block;
-    float: left;
-}
-
-div#cardCol3 {
-    width: 40%;
-    padding-left: 5px;
-}
-
-img#cardPicture {
-    border: 1px solid black;
-    margin: 10px;
-    width: 90%;
-}
-h2.cardHeader, p.cardContent {
-    text-align: center;
-}
-
-#instituteHeader {
-    text-align: right;
-
-}
-
-img#muTiger {
-    width: 150px;
+#shortStory{
     display: block;
-    margin-left: auto;
-}
-
-#courseHistoryText {
+    margin: 20px;
     text-align: center;
-    font-size: 40px;
+    line-height: 40px;
 }
 
-#courseDescription {
-    word-wrap: normal;
-}
-
-#courseName {
-    min-width: 50px;
-}
-
-td.grades, td.projects, td.credits {
+/* Resume Styling */
+#resumeDiv{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 30px;
     text-align: center;
 }
 
-.modalDialog {
-position: fixed;
-font-family: Arial, Helvetica, sans-serif;
-top: 0;
-right: 0;
-bottom: 0;
-left: 0;
-background: rgba(0,0,0,0.8);
-z-index: 99999;
-opacity: 0;
--webkit-transition: opacity 400ms ease-in;
--moz-transition: opacity 400ms ease-in;
-transition: opacity 400ms ease-in;
-pointer-events: none;
+.resumeList{
+    list-style-type: none;
+    margin-right: 40px;
+    font-size: 24px;
 }
 
-.modalDialog:target {
-opacity: 1;
-pointer-events: auto;
-}
-
-.modalDialog > div {
-    width: 560px;
-    height: 315px;
-    position: relative;
-    margin: 10% auto;
-    border-radius: 10px;
-    background: #fff;
-    background: -moz-linear-gradient(#fff, #999);
-    background: -webkit-linear-gradient(#fff, #999);
-    background: -o-linear-gradient(#fff, #999);
-}
-
-.close {
-background: #606061;
-color: #FFFFFF;
-line-height: 25px;
-position: absolute;
-right: -12px;
-text-align: center;
-top: -10px;
-width: 24px;
-text-decoration: none;
-font-weight: bold;
--webkit-border-radius: 12px;
--moz-border-radius: 12px;
-border-radius: 12px;
--moz-box-shadow: 1px 1px 3px #000;
--webkit-box-shadow: 1px 1px 3px #000;
-box-shadow: 1px 1px 3px #000;
-}
-
-.close:hover { 
-    background: #00d9ff; 
+.skillsPara{
+    font-size: 28px;
 }
 
 /* Skills Column Styling */
@@ -373,20 +214,16 @@ hr {
 }
 
 #myPhoto {
-    /* positioned image relative */
     position: relative;
     
-    /* aligned image center */
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
     margin-bottom: 50px;
     
-    /* Specified image max-width */
     max-width: 40%;
     
-    /* Specified image border */
     border-style: solid;
     border-width: 2px;
     border-color: aqua;
@@ -394,17 +231,13 @@ hr {
 }
 
 .homepageName{
-    /* Specified h3 font-size */
     font-size: 40px;
     
-    /* Specified h3 margins */
     margin-top: 20px;
     margin-bottom: 20px;
     
-    /* Positioned h3 center */
     text-align: center;
     
-    /* Positioned h3 relative */
     position: relative;
     color: aqua;
 }
@@ -412,14 +245,11 @@ hr {
 .aboutMe {
     margin-top: -12px;
     
-    /* Paragraph centered */
     text-align: center;
     
-    /* Specified font-size */
     font-size: 24px;
     
-    /* Specified color */
-    color: skyblue;
+    color: darkblue;
 }
 
 #links {
@@ -428,7 +258,7 @@ hr {
 
 .linkButton {
     font-size: 30px;
-    background-color: darkgreen;
+    background-color: slategray;
     color: lightblue;
     border: 2px solid lightblue;
     transition-duration: 0.4s;
@@ -454,8 +284,7 @@ h4 {
     color: azure;
 }
 body {
-    /* Body color changed */
-    background-color: darkgreen;
+    background-color: slategray;
     
     padding-top: 60px;
     padding-bottom: 40px;
